@@ -8,38 +8,40 @@ Este teste tem como objetivo analisar um microssistema web contendo funcionalida
 Bugs funcionais
 
 Problemas de experiência do usuário (UX)
+
 Problemas básicos de segurança
+
 Classificação de severidade e prioridade dos bugs encontrados
 
 O sistema analisado foi:
 
 https://qa-play-sim.lovable.app/
 
-Estratégia de Testes
+Estratégia de Testes:
 
 Foi realizada uma análise exploratória nas funcionalidades disponíveis no sistema, com foco nas seguintes áreas:
 
-Validação de campos do formulário de cadastro
+Validação de campos do formulário de cadastro;
 
-Validação de autenticação no login
+Validação de autenticação no login;
 
-Consistência das mensagens apresentadas ao usuário
+Consistência das mensagens apresentadas ao usuário;
 
-Testes de dados inválidos ou incompletos
+Testes de dados inválidos ou incompletos;
 
-Avaliação da experiência visual da interface
+Avaliação da experiência visual da interface;
 
 Durante os testes foram analisados diferentes cenários, incluindo:
 
-Campos vazios
+Campos vazios;
 
-Dados inválidos
+Dados inválidos;
 
-Duplicidade de informações
+Duplicidade de informações;
 
-Regras de senha
+Regras de senha;
 
-Mensagens retornadas pelo sistema
+Mensagens retornadas pelo sistema;
 
 Bugs Identificados:
 
