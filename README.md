@@ -20,17 +20,25 @@ Estratégia de Testes
 Foi realizada uma análise exploratória nas funcionalidades disponíveis no sistema, com foco nas seguintes áreas:
 
 Validação de campos do formulário de cadastro
+
 Validação de autenticação no login
+
 Consistência das mensagens apresentadas ao usuário
+
 Testes de dados inválidos ou incompletos
+
 Avaliação da experiência visual da interface
 
 Durante os testes foram analisados diferentes cenários, incluindo:
 
 Campos vazios
+
 Dados inválidos
+
 Duplicidade de informações
+
 Regras de senha
+
 Mensagens retornadas pelo sistema
 
 Bugs Identificados:
@@ -44,7 +52,9 @@ O sistema permite criar uma conta mesmo sem preencher nenhum campo do formulári
 Passos para reproduzir:
 
 Acessar a tela Criar Conta
+
 Deixar todos os campos vazios
+
 Clicar em Criar Conta
 
 Resultado atual:
@@ -52,6 +62,7 @@ Resultado atual:
 O sistema retorna a mensagem:
 
 Conta criada com sucesso
+
 Sua conta foi criada. Você já pode acessar a plataforma.
 
 Resultado esperado:
@@ -70,11 +81,13 @@ O sistema permite criar múltiplos usuários sem dados e também permite criar d
 Passos para reproduzir:
 
 Criar conta sem preencher dados
+
 Repetir o processo
 
 Ou
 
 Criar conta com dados válidos
+
 Criar nova conta utilizando o mesmo email
 
 Resultado atual:
@@ -97,8 +110,11 @@ Foi possível realizar login sem preencher os campos de email e senha após a cr
 Passos para reproduzir:
 
 Criar conta sem dados
+
 Acessar tela de login
+
 Deixar campos vazios
+
 Clicar em Login
 
 Resultado atual:
@@ -121,8 +137,11 @@ O sistema permite criar conta mesmo quando o campo Confirmar senha possui valor 
 Passos para reproduzir:
 
 Acessar Criar Conta
+
 Inserir senha válida
+
 Inserir confirmação de senha diferente
+
 Criar conta
 
 Resultado atual:
@@ -145,7 +164,9 @@ O sistema aceita emails inválidos ou contendo espaços, permitindo criação de
 Passos para reproduzir:
 
 Inserir email inválido ou com espaços no cadastro
+
 Criar conta
+
 Realizar login com o mesmo email
 
 Resultado atual
@@ -168,6 +189,7 @@ Apesar da interface informar que a senha deve conter no mínimo 8 caracteres e 1
 Passos para reproduzir:
 
 Inserir senha com menos de 8 caracteres ou sem caractere especial
+
 Criar conta
 
 Resultado atual:
@@ -190,6 +212,7 @@ O campo telefone permite inserir letras e grande quantidade de caracteres sem va
 Passos para reproduzir:
 
 Inserir letras ou sequência longa no campo telefone
+
 Criar conta
 
 Resultado atual:
@@ -212,8 +235,11 @@ Ao tentar realizar login utilizando um e-mail válido já cadastrado no sistema,
 Passos para reproduzir:
 
 Acessar a página de login.
+
 Inserir um e-mail já cadastrado no sistema.
+
 Digitar uma senha incorreta.
+
 Clicar em Entrar / Login.
 
 Resultado atual:
@@ -253,7 +279,9 @@ Descrição:
 Na tela de criação de conta os campos apresentam problemas visuais:
 
 campos se sobrepõem;
+
 ultrapassam os limites da borda da interface;
+
 layout fica desconfigurado;
 
 Isso prejudica a experiência do usuário.
