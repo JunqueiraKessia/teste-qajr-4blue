@@ -1,7 +1,7 @@
 # teste-qajr-4blue
 Teste Técnico — QA Jr
 
-Objetivo:
+**Objetivo:**
 
 Este teste tem como objetivo analisar um microssistema web contendo funcionalidades de login e criação de conta, identificando possíveis problemas relacionados a:
 
@@ -13,11 +13,11 @@ Problemas básicos de segurança
 
 Classificação de severidade e prioridade dos bugs encontrados
 
-O sistema analisado foi:
+**O sistema analisado foi:**
 
 https://qa-play-sim.lovable.app/
 
-Estratégia de Testes:
+**Estratégia de Testes:**
 
 Foi realizada uma análise exploratória nas funcionalidades disponíveis no sistema, com foco nas seguintes áreas:
 
@@ -43,11 +43,11 @@ Regras de senha;
 
 Mensagens retornadas pelo sistema;
 
-Bugs Identificados:
+**Bugs Identificados:**
 
-Bug 1 — Sistema permite criar conta sem preencher campos obrigatórios
+**Bug 1 — Sistema permite criar conta sem preencher campos obrigatórios**
 
-Descrição
+Descrição:
 
 O sistema permite criar uma conta mesmo sem preencher nenhum campo do formulário de cadastro.
 
@@ -74,7 +74,11 @@ O sistema deveria impedir a criação da conta e solicitar o preenchimento dos c
 Severidade: Crítico
 Prioridade: Alta
 
-Bug 2 — Sistema permite criar múltiplos usuários vazios ou duplicados
+### Evidência
+![Campos de Cadastro vazio](images/campos_vazios.png)
+![Campos de Cadastro vazio](images/sucesso_campvazio.png)
+
+**Bug 2 — Sistema permite criar múltiplos usuários vazios ou duplicados**
 
 Descrição:
 
@@ -103,7 +107,7 @@ O sistema deveria exigir o preenchimento dos campos obrigatórios e impedir cada
 Severidade: Crítico
 Prioridade: Alta
 
-Bug 3 — Sistema permite login sem preencher email e senha
+**Bug 3 — Sistema permite login sem preencher email e senha**
 
 Descrição:
 
@@ -130,7 +134,11 @@ O sistema deveria exigir o preenchimento de email e senha antes de permitir o lo
 Severidade: Crítico
 Prioridade: Alta
 
-Bug 4 — Sistema permite criação de conta com confirmação de senha diferente
+### Evidência
+![Login sem preencher os campos](images/login_vazio.png)
+![Login sem preencher os campos](images/sucessoLogin_vazio.png)
+
+**Bug 4 — Sistema permite criação de conta com confirmação de senha diferente**
 
 Descrição:
 
@@ -157,7 +165,7 @@ O sistema deveria impedir o cadastro e informar que as senhas não coincidem.
 Severidade: Crítico
 Prioridade: Alta
 
-Bug 5 — Sistema permite cadastro com email inválido ou com espaços
+**Bug 5 — Sistema permite cadastro com email inválido ou com espaços**
 
 Descrição:
 
@@ -182,7 +190,12 @@ O sistema deveria validar o formato do email e impedir cadastro com valores inv�
 Severidade: Alto
 Prioridade: Alta
 
-Bug 6 — Sistema não valida regra mínima de senha
+### Evidência
+![Campos com espaço](images/cadastro_espaçoEmail.png)
+![Campos de Email Inválido](images/email_telefone_cadatro_invalido.png)
+![Campos de Email Inválido](images/login_sucesso_emailInvalido_e_mensagemErro.png)
+
+**Bug 6 — Sistema não valida regra mínima de senha**
 
 Descrição:
 
@@ -205,7 +218,7 @@ O sistema deveria validar a regra de senha antes de permitir o cadastro.
 Severidade: Alto
 Prioridade: Alta
 
-Bug 7 — Campo telefone aceita letras e quantidade ilimitada de caracteres
+**Bug 7 — Campo telefone aceita letras e quantidade ilimitada de caracteres**
 
 Descrição:
 
@@ -228,7 +241,11 @@ O campo telefone deveria aceitar apenas números e possuir limite de caracteres.
 Severidade: Médio
 Prioridade: Média
 
-Bug 8 — Mensagem incorreta ao tentar login com senha errada
+### Evidências
+![Campos de telefone Inválido](images/email_telefone_cadatro_invalido.png)
+![Campos de telefone Inválido - Sucesso ao criar](images/sucesso_emailPhone_invalido.png)
+
+**Bug 8 — Mensagem incorreta ao tentar login com senha errada**
 
 Descrição:
 
@@ -257,7 +274,7 @@ O sistema deveria informar que a senha está incorreta, por exemplo:
 Severidade: Médio
 Prioridade: Média
 
-Bug 9 — Mensagens contraditórias após login
+**Bug 9 — Mensagens contraditórias após login**
 
 Descrição:
 
@@ -274,7 +291,10 @@ Como o login foi realizado corretamente, o sistema deveria exibir apenas a mensa
 Severidade: Médio
 Prioridade: Média
 
-Bug 10 — Problema de layout na tela de cadastro
+### Evidência
+![Mensagem Contraditória ](images/loginSucesso_mensagemError.png)
+
+**Bug 10 — Problema de layout na tela de cadastro**
 
 Descrição:
 
@@ -304,8 +324,11 @@ Os campos deveriam permanecer dentro dos limites da interface com layout alinhad
 Severidade: Baixo
 Prioridade: Média
 
+### Evidência
+![Layout Quebrado](images/layout_quebrado.png)
+
 ----------------------------------------------------------------------------------------------
-Quais 2 bugs você corrigiria primeiro e por quê?
+**Quais 2 bugs você corrigiria primeiro e por quê?**
 
 Os dois bugs que eu corrigiria primeiro seriam:
 
@@ -320,7 +343,7 @@ Esse bug compromete o processo de autenticação, pois permite que o usuário cr
 A correção desses dois problemas garante maior confiabilidade no fluxo de cadastro e autenticação do sistema.
 
 ------------------------------------------------------------------------------------------------
-Sugestões de melhorias
+**Sugestões de melhorias**
 
 Algumas melhorias que poderiam ser implementadas:
 
